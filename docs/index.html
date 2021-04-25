@@ -34,6 +34,8 @@
       <br><br>
       <input type = "button" value = "Save To Device" class = "btn_light" onclick = "Settings();CFL()">
       <br><br>
+      <input type = "button" value = "Import From Website" class = "btn_light" onclick = "Settings();LoadWebsite()">
+      <br><br>
       <select class = "Theme select_light" onchange = "Settings();Set('T',this.value)">
         <option value = "light">
           Light
@@ -59,8 +61,8 @@
 			</td>
 		  </tr>
 		</table>
-		<textarea class = "Editor" autocapetalize = "no" rows = "300" onkeyup = "Set('LS',this.value)" onpaste = "Set('LS',this.value)"></textarea>
-		<iframe class = "Output hide" src = "" width = "100px"></iframe>
+		<textarea class = "Editor" autocapetalize = "no" rows = "300" onkeyup = "Set('LS')" onpaste = "Set('LS')"></textarea>
+		<iframe class = "Output hide" src = ""></iframe>
 	  </div>
       <div class = "Settings" style = "display: none">
         <input type = "button" value = "New" class = "btn_dark" onclick = "Settings();NewHtml()">
@@ -78,6 +80,8 @@
         <input type = "button" value = "Open Files" class = "btn_dark" onclick = "Settings();CF()">
         <br><br>
         <input type = "button" value = "Save To Device" class = "btn_dark" onclick = "Settings();CFL()">
+        <br><br>
+        <input type = "button" value = "Import From Website" class = "btn_light" onclick = "Settings();LoadWebsite()">
         <br><br>
         <select class = "Theme select_dark" onchange = "Settings();Set('T',this.value)">
           <option value = "light">
